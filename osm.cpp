@@ -10,7 +10,6 @@ double osm_operation_time(unsigned int iterations) {
     if (iterations == 0){
         return -1;
     }
-    int x=1, y=1, z=1, w=1, k=1, p=1, q=1, e=1, r=1, t=1;
     double tot_time = 0;
     timeval tv;
     for (unsigned int i = 0; i < iterations; i += 1)
@@ -19,16 +18,16 @@ double osm_operation_time(unsigned int iterations) {
         time_t start_tv_sec = tv.tv_sec;
         suseconds_t start_tv_usec = tv.tv_usec;
 
-        x + 1;
-        y + 1;
-        z + 1;
-        w + 1;
-        k + 1;
-        p + 1;
-        q + 1;
-        e + 1;
-        r + 1;
-        t + 1;
+        1 + 1;
+        1 + 1;
+        1 + 1;
+        1 + 1;
+        1 + 1;
+        1 + 1;
+        1 + 1;
+        1 + 1;
+        1 + 1;
+        1 + 1;
 
         gettimeofday(&tv, nullptr);
         tot_time += tv.tv_sec - start_tv_sec + (tv.tv_usec - start_tv_usec) / 1000000.0;

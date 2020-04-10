@@ -6,7 +6,7 @@ LIBSRC=osm.cpp
 LIBOBJ=$(LIBSRC:.cpp=.o)
 
 INCS=-I.
-CFLAGS = -Wall -std=c++11 -g $(INCS)
+CFLAGS = -Wall -Wno-unused-value -std=c++11 -g $(INCS)
 CXXFLAGS = -Wall -Wno-unused-value -std=c++11 -g $(INCS)
 
 OSMLIB = libosm.a
